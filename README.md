@@ -3,7 +3,9 @@
 本项目是一个基于大语言模型（LLM）的检索增强生成（RAG）应用。它能够读取本地指定目录下的 PDF 文档，通过本地向量化模型进行嵌入与存储，并基于检索到的上下文，调用大模型（DeepSeek）进行精准问答，同时支持来源溯源。
 
 ## 📸 效果展示
-![alt text](image.png)
+<img width="2862" height="1533" alt="demo png" src="https://github.com/user-attachments/assets/d227236d-cc9d-4848-b44b-26dc16d63cf0" />
+
+
 
 ## ✨ 核心功能
 - **多文档加载**：支持批量加载并解析本地 PDF 文档。
