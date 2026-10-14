@@ -24,6 +24,13 @@
 - **前端界面**：Streamlit
 - **运行环境**：Python 3.12 + venv
 
+## 📊 评测报告
+- **评测集**：20 道基于 PDF 内容的真实问答
+- **评测指标**：关键词命中率
+- **评测结果**：准确率 75% (15/20 通过)
+- <img width="882" height="199" alt="测评结果" src="https://github.com/user-attachments/assets/526c4a8b-ebd4-4fff-ba4b-a66cb0914372" />
+
+
 ## 🔄 核心流程
 ```text
 用户提问 
