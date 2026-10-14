@@ -1,0 +1,102 @@
+[
+  {
+    "question": "len()函数的作用是什么？",
+    "ground_truth": "返回对象的长度（元素的个数）。参数可以是序列或者集合。",
+    "relevant_keywords": ["长度", "元素", "序列", "集合"]
+  },
+  {
+    "question": "Python中如何定义一个函数？",
+    "ground_truth": "使用def关键字，后跟函数名和圆括号，以及冒号和缩进的函数体。",
+    "relevant_keywords": ["def", "函数名", "圆括号", "冒号"]
+  },
+  {
+    "question": "单引号('...')和双引号(\"...\")括起来的字符串在Python中有什么区别？",
+    "ground_truth": "两者效果是一样的。唯一区别是在单引号中不需要转义双引号，反之亦然。特殊字符如\\n在两者中具有相同的含义。",
+    "relevant_keywords": ["单引号", "双引号", "转义", "相同"]
+  },
+  {
+    "question": "如何创建一个空的集合？",
+    "ground_truth": "必须使用set()函数，不能用{}，因为{}创建的是一个空的字典。",
+    "relevant_keywords": ["set()", "空集合", "字典"]
+  },
+  {
+    "question": "range()函数的参数有哪些？",
+    "ground_truth": "range函数可以接受stop，或者start和stop，或者start、stop和step三个参数。",
+    "relevant_keywords": ["range", "start", "stop", "step"]
+  },
+  {
+    "question": "列表的append()方法有什么作用？",
+    "ground_truth": "在列表的末尾添加新的元素。",
+    "relevant_keywords": ["append", "列表", "末尾", "元素"]
+  },
+  {
+    "question": "在Python中如何使用列表推导式生成0到9的平方列表？",
+    "ground_truth": "使用 [x**2 for x in range(10)] 的形式。",
+    "relevant_keywords": ["列表推导式", "x**2", "range(10)"]
+  },
+  {
+    "question": "字典的键有什么限制？",
+    "ground_truth": "键必须是不可变类型，字符串和数字永远可以做键。不能用列表作为键，因为列表是可变的。",
+    "relevant_keywords": ["字典", "键", "不可变", "列表"]
+  },
+  {
+    "question": "如何定义类的初始化方法？",
+    "ground_truth": "通过定义名为__init__的特殊方法，并带有self参数。",
+    "relevant_keywords": ["__init__", "self", "初始化"]
+  },
+  {
+    "question": "如何读取文件内容？",
+    "ground_truth": "使用open(filename, 'r')打开文件，然后调用read()方法读取内容。",
+    "relevant_keywords": ["open", "读取", "'r'", "read()"]
+  },
+  {
+    "question": "异常处理中finally子句的作用是什么？",
+    "ground_truth": "不管有没有发生异常，在离开try语句之前总是会执行finally子句，用于定义清理操作。",
+    "relevant_keywords": ["finally", "异常", "try", "清理"]
+  },
+  {
+    "question": "在Python中处理异常的完整语法是什么？",
+    "ground_truth": "使用try...except语句，可以包含多个except子句，一个可选的else子句和可选的finally子句。",
+    "relevant_keywords": ["try", "except", "else", "finally"]
+  },
+  {
+    "question": "如何在Python中引发一个异常？",
+    "ground_truth": "使用raise语句，后跟异常实例或异常类。",
+    "relevant_keywords": ["raise", "异常", "Exception"]
+  },
+  {
+    "question": "if __name__ == '__main__': 这行代码的作用是什么？",
+    "ground_truth": "让此文件既可以作为可执行的脚本，也可以当作可以导入的模块，因为解析命令行的代码只在模块作为main文件执行时才被调用。",
+    "relevant_keywords": ["__name__", "__main__", "脚本", "模块"]
+  },
+  {
+    "question": "Python中如何格式化字符串？",
+    "ground_truth": "可以使用str.format()方法，或者使用旧式的%运算符进行字符串格式化。",
+    "relevant_keywords": ["str.format()", "%运算符", "字符串格式化"]
+  },
+  {
+    "question": "repr()和str()函数有什么区别？",
+    "ground_truth": "str()函数的用意在于返回人类可读的表现形式，而repr()的用意在于生成解释器可读的表现形式。",
+    "relevant_keywords": ["str()", "repr()", "人类可读", "解释器可读"]
+  },
+  {
+    "question": "为什么在Python中 0.1 + 0.2 不等于 0.3？",
+    "ground_truth": "因为大多数十进制小数不能完全用二进制小数表示，计算机存储的是近似值，这是二进制浮点数的自然性质。",
+    "relevant_keywords": ["浮点数", "二进制", "近似值", "十进制"]
+  },
+  {
+    "question": "如何使用with语句打开文件并确保文件自动关闭？",
+    "ground_truth": "使用 with open('workfile', 'r') as f: 的形式，文件用完后会自动关闭，即使过程中发生异常也没关系。",
+    "relevant_keywords": ["with", "open", "自动关闭", "异常"]
+  },
+  {
+    "question": "Python中的lambda表达式是什么？",
+    "ground_truth": "可以使用lambda关键字创建小的匿名函数。它们被局限于只能有一个单独的表达式。",
+    "relevant_keywords": ["lambda", "匿名函数", "表达式"]
+  },
+  {
+    "question": "Python中如何获取命令行参数？",
+    "ground_truth": "命令行参数以一个列表存储在sys模块的argv属性中。",
+    "relevant_keywords": ["sys.argv", "命令行参数", "sys模块"]
+  }
+]
